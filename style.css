@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: #011640;
+   
+}
+.container{
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: -1px 0px 11px 4px rgba(255,255,255,0.7);
+    border-radius: 5px;
+}
+.form-caption{
+    padding: 10px;
+    text-align: center;
+    background-color: #021373;
+    color:#fff;
+    border-radius: 5px 5px 0px 0px;
+}
+#form{
+    padding:40px 40px;
+}
+.form-controls{
+  
+    padding-bottom: 8px;
+    position:relative;
+}
+.form-controls input{
+    display: block;
+    width: 320px;
+    padding:5px 10px;
+    outline:none;
+    border:2px solid #021373
+}
+
+.form-controls i{
+    position: absolute;
+    right:10px;
+    top:32px;
+    visibility: hidden;
+}
+
+.form-controls small{
+    color:#D90416;
+    visibility: hidden;
+}
+
+button{
+    width:100%;
+    padding:4px 0px;
+    background-color:#021373;
+    color:#fff;
+   border:2px solid #021373;
+   border-radius: 4px;
+}
+
+/* =============== for success & error ================== */
+.form-controls.success input{
+    border:2px solid #2A8C39
+}
+.form-controls.error input{
+    border:2px solid #D90416
+}
+
+.form-controls.success i.fa-check-circle{
+    color:#2A8C39;
+    visibility: visible;
+ }
+ .form-controls.error i.fa-exclamation-circle{
+    color:#D90416;
+    visibility: visible;
+ }
+
+ .form-controls.error small{
+    color:#D90416;
+    visibility: visible;
+}
+
+/* ============== password strength ================ */
+/* -------------------password is medium------------- */
+.form-controls.weak input{
+    border:2px solid #D90416
+}
+.form-controls.weak small{
+    color:#D90416;
+    visibility: visible;
+}
+/*------------ password is medium --------------------*/
+.form-controls.medium input{
+    border:2px solid #F2B705
+}
+.form-controls.medium small{
+    color:#F2B705;
+    visibility: visible;
+}
+/*-------------------- password is strong -----------------*/
+.form-controls.strong input{
+    border:2px solid #2A8C39
+}
+.form-controls.strong small{
+    color:#2A8C39;
+    visibility: visible;
+}

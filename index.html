@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation 1</title>
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-caption">
+            <h1>Create Account</h1>
+        </div>
+        <form id="form">
+            <div class="form-controls"  id="user-msg">
+                <label>Username</label>
+                <input type="text" placeholder="UserName" id="username">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Username cannot be empty</small>
+            </div>
+
+            <div class="form-controls" id="email-msg">
+                <label>Email</label>
+                <input type="email" placeholder="Email" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small >This field is required</small>
+            </div>
+
+            <div class="form-controls" id="password-msg">
+                <label>Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="password-strength">password is empty</small>
+            </div>
+            
+            <div class="form-controls" id="confirmPass-msg">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="confirm-pass">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+               <small>Re-write your password</small>
+               
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
